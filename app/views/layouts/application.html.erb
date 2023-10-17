@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+   <div style="color: green;">
+      <%= notice %>
+    </div>
+
+    <div style="color: red;">
+      <%= alert %>
+    </div>
+    
     <title>Helper Methods Part 1 and 2</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -11,14 +20,6 @@
   </head>
 
   <body>
-    <div style="color: green;">
-      <%= notice %>
-    </div>
-
-    <div style="color: red;">
-      <%= alert %>
-    </div>
-    
     <%= yield %>
   </body>
 </html>
